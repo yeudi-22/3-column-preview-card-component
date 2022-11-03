@@ -1,0 +1,139 @@
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--background-headings-buttons: hsl(0, 0%, 95%);
+
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+.cards{
+  width: 100%;
+  height: 100%;
+  margin: 3rem 0;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+}
+
+@media (min-width: 768px){
+    
+    
+.cards{
+    padding: 0 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    margin-top: 1rem;
+}
+
+
+}
+
+.card{
+    padding: 45px;
+    
+
+   
+}
+
+@media (min-width: 768px){
+.card{
+    width: 400px;
+
+    
+}
+
+
+}
+
+.card img{
+    margin-top: 1rem;
+}
+
+.card h1{
+    font-family: 'Big Shoulders Display';
+    color: var(--Transparent-white-paragraphs);
+    margin: 2rem 0;
+    font-size: 3em;
+    text-transform: uppercase;
+    font-weight: 700;
+
+}
+
+.card p{
+    font-family: 'Lexend Deca';
+    color: var(--Transparent-white-paragraphs);
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 50px;
+    margin: 4rem 0;
+
+}
+
+@media (min-width: 768px){
+    .card p {
+       
+        line-height: 40px;
+    } 
+}
+
+.card a{
+ background-color: var(--background-headings-buttons);
+ font-size: 1.2em;
+ font-family: 'Lexend Deca';
+ text-decoration: none;                                                                                                                                                                                                                                                                                      
+ padding: 20px 45px;
+ border-radius: 45px;
+}
+
+.card1 a{
+color: var(--Bright-orange);
+}
+
+.card1{
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    background-color: var(--Bright-orange);
+}
+.card2{
+    background-color: var(--Dark-cyan);
+}
+.card3{
+    background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+
+@media (min-width: 768px){
+    .card1{
+        border-bottom-left-radius: 15px;
+        border-top-left-radius: 15px;
+    }
+    
+    .card3{
+        border-bottom-right-radius: 15px;
+        border-top-right-radius: 15px;
+    }
+
+ 
+
+
+}
+
